@@ -1,0 +1,288 @@
+.home-label {
+  display: grid;
+  grid-template-columns: 262px 908px;
+  padding: 30px 0 16px 0;
+}
+
+.container1 {
+  position: relative;
+  text-align: left;
+  grid-column: 2;
+}
+.text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.text h1 {
+  font-size: 46px;
+  color: #252525;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+}
+.text p {
+  font-size: 16px;
+}
+.text button {
+  margin-top: 10px;
+  height: 40px;
+  width: 141px;
+  background-color: #8bc34a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+.text button:hover {
+  background-color: #7cb342;
+}
+
+.fresh {
+  color: var(--primary-color);
+  font-weight: bolder;
+  font-size: 12px !important;
+  letter-spacing: 3px;
+}
+
+.free {
+  margin: 10px 0 30px 0;
+  color: #888;
+}
+
+img {
+  pointer-events: none;
+}
+
+.slide {
+  display: flex;
+}
+
+.box {
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.box p {
+  font-size: 18px;
+    color: #1c1c1c;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -50px;
+    letter-spacing: 2px;
+    display: block;  
+}
+
+.slide-container {
+  display: grid;
+  grid-template-columns: 1fr 1170px 1fr;
+  align-items: center;
+}
+
+.arrow-left {
+  justify-self: end;
+}
+
+.arrow-left,
+.arrow {
+  cursor: pointer;
+}
+
+.featured-product {
+  padding: 80px 15px 40px 15px;
+}
+
+.product-title {
+  display: flex;
+  justify-content: center;
+}
+
+.product-title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.product-title h2::after {
+  content: "";
+  height: 4px;
+  width: 80px;
+  position: absolute;
+  background: #7cb342;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter li {
+  position: relative;
+  list-style: none;
+  font-size: 18px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: end;
+  margin: 0 25px 50px 0;
+}
+
+.filter li:nth-child(1)::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #7cb342;
+  position: absolute;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-item img {
+  min-width: 262px;
+  min-height: 270px;
+}
+
+.box-item span {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.banner {
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.banner img {
+ width: 555px;
+ height: auto;
+}
+
+.slide-products {
+  display: grid;
+  padding: 80px 15px 0 15px;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.slide-products-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 45px;
+}
+
+.product-box {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+}
+
+.slide-title h3 {
+  font-size: 24px;
+}
+
+.product-text {
+  margin-left: 20px;
+}
+
+.product-text p {
+  font-size: 16px;
+}
+
+.product-text span {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.arrows {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.arrows i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  width: 25px;
+  height: 25px;
+  background: #f2f6fa;
+}
+
+.home-blog {
+  display: grid;
+  padding: 50px 0;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home-blog-title {
+  align-self: center;
+  justify-self: center;
+  grid-column: 1 / -1;
+}
+
+.home-blog-title h2 {
+  font-size: 36px;
+  font-weight: 800;
+  padding: 0 15px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.home-blog-title h2::after {
+  content: "";
+  height: 4px;
+  width: 80px;
+  position: absolute;
+  background: #7cb342;
+}
+
+.home-blog-item {
+  padding: 0 15px;
+}
+
+.home-blog-info {
+  display: flex;
+  gap: 15px;
+}
+
+.home-blog-info p {
+  color: #b2b2b2;
+}
+
+.home-blog-content h4 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.home-blog-content p {
+  font-size: 16px;
+  color: #6f6f6f;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 0 15px 0;
+}

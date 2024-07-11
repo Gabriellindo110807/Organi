@@ -1,0 +1,117 @@
+.tomato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  margin-top: 25px;
+  background: url(breadcrumb.jpg) no-repeat;
+}
+
+.tomato h1 {
+  font-size: 46px;
+  color: white;
+  font-weight: bold;
+}
+
+.banner-content p {
+  font-size: 16px;
+  color: white;
+  margin-top: -20px;
+}
+.banner-content a {
+  font-weight: bold;
+  color: white;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box-info {
+  display: flex;
+  padding: 80px 16px 50px 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-info h3 {
+  font-size: 24px;
+}
+
+.box-info i {
+  font-size: 2rem;
+  color: #7fad39;
+}
+
+.form {
+  display: grid;
+  padding: 80px 0;
+  justify-content: center;
+}
+
+.form h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.form-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-input input {
+  width: 555px;
+  height: 50px;
+  font-size: 16px;
+  color: #6f6f6f;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-title {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.form-input textarea {
+  grid-column: 1 / -1;
+  height: 150px;
+  resize: none;
+  font-size: 16px;
+  color: #6f6f6f;
+  padding-bottom: 24px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  outline: none;
+}
+
+.buttonSend {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #fff;
+
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 13px 30px 12px;
+  background: #7fad39;
+  border: none;
+}
+
+.sendButton {
+  justify-self: center;
+  margin-top: 40px;
+}

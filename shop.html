@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Ogari | Shop</title>
+</head>
+
+<body>
+  <div class="superinfo-bg container">
+    <div class="superinfo">
+      <i class="fa-solid fa-envelope"></i>
+      <p class="email"> hello@colorlib.com</p>
+      <p class="shipping">Free Shipping for all Order of $99</p>
+    </div>
+    <div class="superinfo-contact">
+      <ul>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-linkedin-in"></i></li>
+        <li class="pin"><i class="fa-brands fa-pinterest-p"></i></li>
+      </ul>
+      <div class="linguage">
+        <img class="usa" src="language.png" alt="">
+        <select class="linguage-box" name="" id="">
+          <option value="english">English</option>
+          <option value="spanis">Spanis</option>
+        </select>
+        <p class="barra"></p>
+      </div>
+      <div class="user">
+        <i class="fa-solid fa-user"></i>
+        <p>user</p>
+      </div>
+    </div>
+  </div>
+
+  <header class="container header">
+    <div>
+      <img src="logo.png" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a class="active" href="shop.html">SHOP</a></li>
+        <li><a href="">PAGES</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-bag-shopping"></i>
+      <p>item:<span>$150.00</span></p>
+    </div>
+  </header>
+  <section class="container search">
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa-solid fa-bars"></i>All departments<i class="fa-solid fa-angle-up"></i></button>
+      <div class="dropdown-content">
+        <a href="#">Fresh Meat</a>
+        <a href="#">Vegetables</a>
+        <a href="#">Fruit & Nut Gifts</a>
+        <a href="#">Fresh Berries</a>
+        <a href="#">Ocean Foods</a>
+        <a href="#">Butter & Eggs</a>
+        <a href="#">Fastfood</a>
+        <a href="#">Fresh Onion</a>
+        <a href="#">Papayaya & Crisps</a>
+        <a href="#">Oatmeal</a>
+        <a href="#">Fresh Bananas</a>
+      </div>
+    </div>
+    <div class="categories">
+      <p>All Categories</p>
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <div class="divsearch">
+      <input type="text" placeholder="What do you need?">
+      <a class="btnsearch" href="">Search</a>
+    </div>
+    <div class="phone">
+      <i class="fa-solid fa-phone"></i>
+      <div class="search-label">
+        <p class="tel">+65 11. 188.888</p>
+        <p class="suport">suport 24/7 time</p>
+      </div>
+    </div>
+  </section>
+  <section class="tomato">
+    <div class="banner-content">
+      <h1>Organi Shop</h1>
+      <p><a href="">Home</a> - Shop</p>
+    </div>
+  </section>
+  <section class="shop-grid container">
+    <div class="filters">
+      <h3 class="departmant-tittle">Department</h3>
+      <ul class="list">
+        <li>Fresh meta</li>
+        <li>Vegetables</li>
+        <li>Fruit & Nut Gifts</li>
+        <li>Fresh Berries</li>
+        <li>Ocean Foods</li>
+        <li>Butter & Eggs</li>
+        <li>Fastfood</li>
+        <li>Fresh Onion</li>
+        <li>Papayaya & Crisps</li>
+        <li>OatMeal</li>
+      </ul>
+      <h3 class="tittle">Price</h3>
+      <div class="double-slider-box">
+        <div class="range-slider">
+          <span class="slider-track"></span>
+          <input type="range" name="min-val" class="min-val" min="10" max="540" value="10" oninput="slideMin()">
+          <input type="range" name="max-val" class="max-val" min="10" max="540" value="540" oninput="slideMax()">
+        </div>
+        <div class="input-box">
+          <div class="min-box">
+            <div class="input-wrap">
+              <p class="input-addon">$</p>
+              <input type="text" name="min_input" class="input-field min-input">
+              <p class="bar"></p>
+            </div>
+          </div>
+          <div class="max-box">
+            <div class="input-wrap">
+              <p class="input-addon">$</p>
+              <input type="text" name="max_input" class="input-field max-input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="colors">
+        <h3 class="tittle">Colors</h3>
+        <div class="list-container">
+          <div class="list-color-1">
+            <ul>
+              <li>White</li>
+              <li>Red</li>
+              <li>Blue</li>
+            </ul>
+          </div>
+          <div class="list-color-2">
+            <ul>
+              <li>Gray</li>
+              <li>Black</li>
+              <li>Green</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="popular-size">
+        <h3 class="tittle">Popular-size</h3>
+        <div class="size">
+          <a href="">Large</a>
+          <a href="">Medium</a>
+          <a href="">Small</a>
+          <a href="">Tiny</a>
+        </div>
+      </div>
+      <div>
+        <div class="line">
+          <h3 class="tittle">Latest Products</h3>
+          <div class="arrows">
+            <i class="shop-arrow fa-solid fa-angle-left"></i>
+            <i class="shop-arrow  fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-box">
+        <img src="./img/lp-1.jpg" alt="">
+        <div class="product-text">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+      </div>
+      <div class="product-box">
+        <img src="lp-2.jpg" alt="">
+        <div class="product-text">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+      </div>
+      <div class="product-box">
+        <img src="lp-3.jpg" alt="">
+        <div class="product-text">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <section>
+      <div class="promo-slide-container">
+        <h2 class="sale-tittle">Sale Off</h2>
+      </div>
+      <div class="promo-slide">
+        <div class="product-grid">
+          <div class="box-item shop-box">
+            <img src="feature-4.jpg" alt="">
+            <p class="product-type">Dried Fruit</p>
+            <p>Crab Pool Security</p>
+            <div>
+              <span>$30.00</span>
+              <span class="latest">$36.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-grid">
+          <div class="box-item shop-box">
+            <img src="feature-6.jpg" alt="">
+            <p class="product-type">Dried Fruit</p>
+            <p>Crab Pool Security</p>
+            <div>
+              <span>$30.00</span>
+              <span class="latest">$36.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-grid">
+          <div class="box-item shop-box">
+            <img src="feature-8.jpg" alt="">
+            <p class="product-type">Dried Fruit</p>
+            <p>Crab Pool Security</p>
+            <div>
+              <span>$30.00</span>
+              <span class="latest">$36.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-page-container">
+        <div class="slide-page active"></div>
+        <div class="slide-page"></div>
+      </div>
+      <div class="hr"></div>
+    </section>
+    <div class="products">
+      <div class="product-filter">
+        <div class="product-filter-item-1 select-filter">
+          <p>Sort By</p>
+          <select name="" id="">
+            <option value="">Default</option>
+            <option value="">Default</option>
+          </select>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="product-filter-item-2 product-cont">
+          <span>16</span>
+          <p>Products found</p>
+        </div>
+        <div class="product-filter-item-3 grid-style">
+          <i class='bx bxs-grid-alt'></i>
+          <i class="fa-solid fa-list-ul"></i>
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="box-item shop-box">
+          <img src="feature-1.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="feature-2.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="feature-3.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="feature-4.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="feature-5.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="feature-6.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="feature-7.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="feature-8.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box shop-box">
+          <img src="product-9.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="product-10.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="product-11.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+        <div class="box-item shop-box">
+          <img src="product-12.jpg" alt="">
+          <p>Crab Pool Security</p>
+          <span>$30.00</span>
+        </div>
+      </div>
+      <div class="product-pagination pagination-blog">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-bg">
+    <div class="footer container">
+    <div>
+      <div><img class="footerlogo" src="logo.png"></div>
+      <p class="adress">Address: 60-49 Road 11378 New York</p>
+      <p class="adress">Phone: +65 11.188.888</p>
+      <p class="adress">Email: hello@colorlib.com</p>
+    </div>
+    <div class="list-div">
+      <h5>Useful Links</h5>
+      <div class="list-content">
+      <div>
+        <ul class="list-info-1">
+          <li><a href="">About Us</a></li>
+          <li><a href="">About Our Shop</a></li>
+          <li><a href="">Secure Shopping</a></li>
+          <li><a href="">Delivery infomation</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Our Sitemap</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul  class="list-info-2">
+          <li><a href="">Who We Are</a></li>
+          <li><a href="">Our Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Innovation</a></li>
+          <li><a href="">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    
+    <div class="mail">
+      <h5>Join Our Newsletter Now</h5>
+      <p class="email-text">Get E-mail updates about our latest shop and special offers.</p>
+      <div class="email-footer">
+        <input class="email-footer" type="email" placeholder="Enter your mail">
+        <a href="" class="email-button">Subscribe</a>
+      </div>
+      <div class="social-medias-bottom">
+        <ul class="social-list">
+          <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <p></p>
+      <img src="payment-item.png" alt="">
+    </div>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
